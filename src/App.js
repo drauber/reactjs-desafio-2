@@ -15,7 +15,7 @@ function App() {
   async function handleAddRepository() {
     const response = await api.post('/repositories',
       {
-        "title": "Desafio ReactJS",
+        "title": `Desafio ReactJS ${Date.now()}`,
         "url": "http://urldorepo.com/recurso",
         "techs": ["Ruby", "Shell", "Fortran"]
       }
